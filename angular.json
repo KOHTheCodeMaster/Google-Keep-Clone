@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "Google-Keep": {
+    "Google-Keep-Clone": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/google-keep",
+            "outputPath": "dist/google-keep-clone",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -57,10 +57,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "Google-Keep:build:production"
+              "buildTarget": "Google-Keep-Clone:build:production"
             },
             "development": {
-              "buildTarget": "Google-Keep:build:development"
+              "buildTarget": "Google-Keep-Clone:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -68,7 +68,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "buildTarget": "google-keep:build"
+            "buildTarget": "google-keep-clone:build"
           }
         },
         "test": {
